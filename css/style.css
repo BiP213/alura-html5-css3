@@ -1,5 +1,5 @@
-body {
-
+#banner {
+    width: 100%;
 }
 
 .principal {
@@ -7,19 +7,19 @@ body {
     padding: 30px;
 }
 
-#banner {
-    width: 100%;
-}
-
-.titulo-principal {
-    padding-left: 20px;
-}
-
-.titulo-centralizado {
+.principal p {
     text-align: center;
 }
 
-p {
+.titulo-principal {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    top: 130px;
+    margin-left: 29%;
+}
+
+.titulo-centralizado {
     text-align: center;
 }
 
@@ -27,7 +27,7 @@ p {
     font-size: 20px;
 }
 
-em strong {
+.principal em strong {
     color: #FF0000;
 }
 
@@ -36,7 +36,7 @@ em strong {
     padding: 20px;
 }
 
-ul {
+.beneficios ul {
     display: inline-block;
     vertical-align: top;
     width: 20%;
