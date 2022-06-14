@@ -1,0 +1,93 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative; /* necessário para incluir a lista com o atributo absolute dentro da div da classe caixa. */
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute; /* faz com que o elemento mude seu ponto inicial, sem restrições por toda a página, inclusive sobrepondo outros elementos. */
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline; /* a lista passa a ser horizontal, porém, sem alterar seu ponto inicial e continua sendo bloco. */
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase; /* transforma o texto dos links para maiúsculo. */
+    color: #000000;
+    font-weight: bold; /* negrito. */
+    font-size: 22px;
+    text-decoration: none; /* remove toda a decoração do texto, neste caso, o sublinhado dos links. */
+}
+
+nav a:hover { /* altera aspectos dos elementos quando o mouse estiver encima. */
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top; /* todos os elementos são alinhados tendo como referência o valor bottom por padrão */
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; 
+    /* a caixa assegura que os pixels de padding não ultrapassem os valores em porcentagem, 
+    ou seja, o valor em px será calculado como parte dos 30% ao invés de somar à porcentagem já estabelecida */
+    border: 2px solid #000000; /* criar uma borda envolta do elemento, tamanho, tipo, cor. */
+    border-radius: 10px; /* arredondar os cantos da borda em pixels. */
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:hover h2 { /* para editar o comportamento do título do elemento. */
+    font-size: 34px;
+}
+
+.produtos li:active { /* modifica o estado do elemento quando o clique do mouse estiver sendo pressionado. */
+    border-color: #088C19;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("imagens/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
